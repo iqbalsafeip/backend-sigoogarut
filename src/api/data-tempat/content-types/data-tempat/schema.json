@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_tempats",
+  "info": {
+    "singularName": "data-tempat",
+    "pluralName": "data-tempats",
+    "displayName": "data tempat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "default": "-"
+    },
+    "dayOpen": {
+      "type": "string",
+      "default": "-"
+    },
+    "dayClose": {
+      "type": "string",
+      "default": "-"
+    },
+    "openTime": {
+      "type": "string",
+      "default": "-"
+    },
+    "closeTime": {
+      "type": "string",
+      "default": "-"
+    },
+    "phone": {
+      "type": "string",
+      "default": "-"
+    },
+    "ownerName": {
+      "type": "string",
+      "default": "-"
+    },
+    "latitude": {
+      "type": "string",
+      "required": true
+    },
+    "longitude": {
+      "type": "string",
+      "required": true
+    },
+    "pictures": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "data_komentars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::data-komentar.data-komentar",
+      "mappedBy": "id_tempat"
+    }
+  }
+}

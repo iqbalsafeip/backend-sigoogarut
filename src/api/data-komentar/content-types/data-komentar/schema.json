@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_komentars",
+  "info": {
+    "singularName": "data-komentar",
+    "pluralName": "data-komentars",
+    "displayName": "data komentar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "data_komentars"
+    },
+    "id_tempat": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::data-tempat.data-tempat",
+      "inversedBy": "data_komentars"
+    },
+    "isi": {
+      "type": "text",
+      "required": true
+    },
+    "tanggal": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
