@@ -4,7 +4,8 @@
   "info": {
     "singularName": "data-tempat",
     "pluralName": "data-tempats",
-    "displayName": "data tempat"
+    "displayName": "data tempat",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -52,11 +53,12 @@
       "required": true
     },
     "pictures": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "data_komentars": {
       "type": "relation",

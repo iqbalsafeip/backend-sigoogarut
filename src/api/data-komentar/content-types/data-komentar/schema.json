@@ -27,10 +27,6 @@
     "isi": {
       "type": "text",
       "required": true
-    },
-    "tanggal": {
-      "type": "datetime",
-      "required": true
     }
   }
 }

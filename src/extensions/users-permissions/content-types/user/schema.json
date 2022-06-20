@@ -68,6 +68,16 @@
       "relation": "oneToMany",
       "target": "api::data-komentar.data-komentar",
       "mappedBy": "id_user"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "peran": {
+      "type": "enumeration",
+      "enum": [
+        "Pemilik",
+        "Pengguna"
+      ]
     }
   }
 }
