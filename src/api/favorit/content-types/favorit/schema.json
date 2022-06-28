@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorits",
+  "info": {
+    "singularName": "favorit",
+    "pluralName": "favorits",
+    "displayName": "Favorit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data_tempat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::data-tempat.data-tempat"
+    },
+    "id_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
